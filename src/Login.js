@@ -47,7 +47,7 @@ const Login = () => {
             </Head>    
             <Container>
                 아이디(이메일) : <input  onChange={(e) => {setId(e.target.value)}} ref={id_ref}/> <br/>
-                비밀번호 : <input onChange={(e) => {setPwd(e.target.value)}} ref={pw_ref}/> <br/>
+                비밀번호 : <input type="password" onChange={(e) => {setPwd(e.target.value)}} ref={pw_ref}/> <br/>
                 <button disabled={id === "" || pwd === "" ? true : false} onClick={loginFB}>로그인</button>
                 
             </Container>
